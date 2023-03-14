@@ -13,6 +13,7 @@ export const Hero: FC = () => {
         className="h-32 w-32 rounded-full object-cover shadow-xl"
         src={heroPic}
         alt="Only who is smart can see it"
+        draggable={false}
       />
       <div className="font-jetbrains-mono text-2xl font-bold text-primary-text"></div>
       <Menubar />
