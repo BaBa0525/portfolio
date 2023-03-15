@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --home-primary: #f7f0e0;
+  --vscode-primary: #d8909c;
+  --project-primary: #d0b3c5;
+}

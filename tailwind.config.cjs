@@ -8,8 +8,9 @@ const config = {
     extend: {
       colors: {
         primary: {
-          "hero-bg": "#f7f0e0",
-          "vscode-bg": "#d8909c",
+          "hero-bg": "var(--home-primary)",
+          "vscode-bg": "var(--vscode-primary)",
+          "project-bg": "var(--project-primary)",
           text: "#323232",
         },
         nav: "#f6f6f6",
