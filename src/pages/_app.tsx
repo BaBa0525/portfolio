@@ -10,7 +10,7 @@ const jetbrains_mono = JetBrains_Mono({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={`${jetbrains_mono.variable} bg-primary-bg`}>
+    <main className={`${jetbrains_mono.variable} `}>
       <Component {...pageProps} />
     </main>
   );

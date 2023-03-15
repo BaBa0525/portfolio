@@ -7,7 +7,7 @@ export const Hero: FC = () => {
   return (
     <section
       id="hsunhsun"
-      className="relative flex h-screen flex-col items-center space-y-16 pt-40"
+      className="relative flex h-screen flex-col items-center space-y-16 bg-primary-hero-bg pt-40"
     >
       <Image
         className="h-32 w-32 rounded-full object-cover shadow-xl"
