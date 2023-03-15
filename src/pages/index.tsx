@@ -1,3 +1,4 @@
+import { Greeting } from "@/components/Greeting";
 import { Layout } from "@/layouts/Layout";
 import { type NextPage } from "next";
 import Image from "next/image";
@@ -16,7 +17,9 @@ const Home: NextPage = () => {
           alt="Only who is smart can see it"
           draggable={false}
         />
-        <div className="font-jetbrains-mono text-2xl font-bold text-primary-text"></div>
+        <div className="font-jetbrains-mono text-2xl font-bold text-primary-text">
+          <Greeting />
+        </div>
       </section>
     </Layout>
   );
