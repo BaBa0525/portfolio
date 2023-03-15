@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { type FC } from "react";
-import { Menubar } from "./Menubar";
 import heroPic from "/public/images/hero.jpg";
 
 export const Hero: FC = () => {
@@ -16,7 +15,6 @@ export const Hero: FC = () => {
         draggable={false}
       />
       <div className="font-jetbrains-mono text-2xl font-bold text-primary-text"></div>
-      <Menubar />
     </section>
   );
 };
