@@ -1,4 +1,4 @@
-import { type FC } from "react";
+import { useEffect, type FC } from "react";
 import homePic from "/public/images/navbar/home.png";
 import projectPic from "/public/images/navbar/project.png";
 import vscodePic from "/public/images/navbar/vscode.png";
@@ -9,6 +9,7 @@ import { MenubarItem } from "./MenubarItem";
 
 const renderColorAtom = atom("var(--home-primary)");
 const isRenderingAtom = atom(false);
+const diameterAtom = atom(0);
 
 const MenuItemInfo = [
   {
@@ -32,8 +33,22 @@ const MenuItemInfo = [
 ];
 
 export const Menubar: FC = () => {
-  // const w = window.innerWidth;
-  // const h = window.innerHeight;
+  const [diameter, setDiameter] = useAtom(diameterAtom);
+
+  useEffect(() => {
+    const resizeHandler = () => {
+      // Set window width/height to state
+      if (window) {
+        const d = Math.round(
+          Math.max(window.innerWidth, window.innerHeight) / 10
+        );
+        setDiameter(d);
+      }
+    };
+    window.addEventListener("resize", resizeHandler);
+    resizeHandler();
+    return () => window.removeEventListener("resize", resizeHandler);
+  });
 
   const [color, setColor] = useAtom(renderColorAtom);
   const [isRendering, setRendering] = useAtom(isRenderingAtom);
@@ -60,12 +75,12 @@ export const Menubar: FC = () => {
       </motion.nav>
 
       <motion.div
-        className="absolute bottom-0 h-10 w-10 translate-y-1/2 rounded-full transition-colors duration-1000"
-        style={{ background: color }}
+        className="absolute bottom-0 translate-y-1/2 rounded-full transition-colors duration-1000"
+        style={{ background: color, height: diameter, width: diameter }}
         animate={{ visibility: "hidden" }}
         exit={{
           visibility: "visible",
-          scale: 100,
+          scale: 30,
           transition: { duration: 1.2 },
         }}
         transition={{ duration: 1 }}
