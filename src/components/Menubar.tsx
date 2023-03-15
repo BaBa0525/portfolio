@@ -14,19 +14,19 @@ const MenuItemInfo = [
   {
     src: homePic,
     alt: "home",
-    url: "/",
+    href: "/",
     color: "var(--home-primary)",
   },
   {
     src: vscodePic,
     alt: "vscode",
-    url: "/vscode",
+    href: "/vscode",
     color: "var(--vscode-primary)",
   },
   {
     src: projectPic,
     alt: "project",
-    url: "/project",
+    href: "/project",
     color: "var(--project-primary)",
   },
 ];
@@ -41,7 +41,7 @@ export const Menubar: FC = () => {
   return (
     <>
       <motion.nav
-        className="fixed bottom-10 z-10 flex h-16 items-center justify-between gap-10 rounded-2xl border-[1px] border-black/10 bg-nav/20 px-10 shadow-2xl backdrop-blur-sm backdrop-brightness-100"
+        className="fixed bottom-10 z-10 flex h-16 items-center justify-between gap-10 rounded-2xl border border-black/10 bg-nav/20 px-10 pb-1 shadow-2xl backdrop-blur-sm backdrop-brightness-100"
         initial={{ y: "150%" }}
         animate={{ y: 0 }}
         exit={{ y: "150%" }}
@@ -75,30 +75,3 @@ export const Menubar: FC = () => {
     </>
   );
 };
-
-/**
- * 
- * <nav className="invisible fixed bottom-10 flex h-16 items-center justify-between gap-10 rounded-2xl px-10">
-        {MenuItemInfo.map((info, idx) =>
-          idx === pageIdx ? (
-            <motion.div
-              key={info.alt}
-              className={`h-10 w-10 rounded-full ${info.color}`}
-              // initial={{ visibility: "hidden" }}
-              exit={{
-                visibility: "visible",
-                scale: 100,
-                transition: { duration: 1.2 },
-              }}
-              transition={{ duration: 1 }}
-            />
-          ) : (
-            <MenubarItem
-              {...info}
-              key={info.alt}
-              onClick={() => setPageIdx(idx)}
-            ></MenubarItem>
-          )
-        )}
-      </nav>
- */
