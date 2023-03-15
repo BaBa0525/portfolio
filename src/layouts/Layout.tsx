@@ -1,4 +1,4 @@
-import { Menubar } from "@/components/Menubar";
+import { Menubar } from "@/components/Shared/Menubar";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import { type FC, type PropsWithChildren } from "react";

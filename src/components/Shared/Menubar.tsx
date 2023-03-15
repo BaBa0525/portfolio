@@ -1,39 +1,18 @@
 import { useEffect, type FC } from "react";
-import homePic from "/public/images/navbar/home.png";
-import projectPic from "/public/images/navbar/project.png";
-import vscodePic from "/public/images/navbar/vscode.png";
 
 import { motion } from "framer-motion";
 import { atom, useAtom } from "jotai";
 import { MenubarItem } from "./MenubarItem";
+import { MenuItemInfo } from "./MenuItemInfo";
 
 const renderColorAtom = atom("var(--home-primary)");
 const isRenderingAtom = atom(false);
 const diameterAtom = atom(0);
 
-const MenuItemInfo = [
-  {
-    src: homePic,
-    alt: "home",
-    href: "/",
-    color: "var(--home-primary)",
-  },
-  {
-    src: vscodePic,
-    alt: "vscode",
-    href: "/vscode",
-    color: "var(--vscode-primary)",
-  },
-  {
-    src: projectPic,
-    alt: "project",
-    href: "/project",
-    color: "var(--project-primary)",
-  },
-];
-
 export const Menubar: FC = () => {
+  const [color, setColor] = useAtom(renderColorAtom);
   const [diameter, setDiameter] = useAtom(diameterAtom);
+  const [isRendering, setRendering] = useAtom(isRenderingAtom);
 
   useEffect(() => {
     const resizeHandler = () => {
@@ -49,9 +28,6 @@ export const Menubar: FC = () => {
     resizeHandler();
     return () => window.removeEventListener("resize", resizeHandler);
   });
-
-  const [color, setColor] = useAtom(renderColorAtom);
-  const [isRendering, setRendering] = useAtom(isRenderingAtom);
 
   return (
     <>
