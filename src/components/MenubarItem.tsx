@@ -19,7 +19,6 @@ export const MenubarItem: FC<MenubarItemProps> = ({
   clickHandler,
 }) => {
   const router = useRouter();
-  console.log(router.pathname);
   return (
     <div className="relative h-10 w-10">
       {router.pathname === href && (

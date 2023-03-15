@@ -53,9 +53,7 @@ export const Menubar: FC = () => {
           <MenubarItem
             {...info}
             key={info.alt}
-            onClick={() => {
-              setColor(info.color);
-            }}
+            clickHandler={() => setColor(info.color)}
             isRendering={isRendering}
           ></MenubarItem>
         ))}
