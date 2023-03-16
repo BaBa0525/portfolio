@@ -13,6 +13,13 @@ const config = {
           "project-bg": "var(--project-primary)",
           text: "#323232",
         },
+        vscode: {
+          element: "#e3c07b",
+          attr: "#d19a66",
+          operator: "#56b6c2",
+          string: "#98c379",
+          editor: "#1e293c",
+        },
         nav: "#f6f6f6",
       },
       fontFamily: {
