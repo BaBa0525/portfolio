@@ -12,7 +12,7 @@ const Home: NextPage = () => {
             <div className="ml-2 h-2.5 w-2.5 rounded-full bg-slate-600"></div>
             <div className="ml-2 h-2.5 w-2.5 rounded-full bg-slate-600"></div>
           </div>
-          <pre className="h-[3/4] w-5/6 max-w-screen-md overflow-auto rounded-b-lg bg-vscode-editor px-8 py-8 ">
+          <pre className="h-[75%] w-5/6 max-w-screen-md overflow-auto rounded-b-lg bg-vscode-editor px-8 py-8 shadow-2xl">
             <code className="font-jetbrains-mono text-sm text-white lg:text-lg">
               <Tag name="About" props={{ who: "Cheng-Hsun Wang" }}>
                 <Tag name="School" props={{ year: "junior", major: "CS" }}>
@@ -27,9 +27,9 @@ const Home: NextPage = () => {
                     user experiences
                   </Tag>
                 </Tag>
-                <Tag name="Hobbies" props={{}}>
+                <Tag name="Like" props={{}}>
                   <Tag name="Learning" props={{}}>
-                    Cheng Hsun likes to embrace new things and skills
+                    Cheng-Hsun likes to embrace new things and skills
                   </Tag>
                   <Tag name="Exercise" props={{}}>
                     Badminton
