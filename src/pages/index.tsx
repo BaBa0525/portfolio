@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <Layout bg="bg-primary-hero-bg">
       <section
         id="hero"
-        className="relative flex h-screen flex-col items-center space-y-16 bg-primary-hero-bg pt-40"
+        className="relative flex flex-col items-center space-y-16 pt-40"
       >
         <Image
           className="h-32 w-32 rounded-full object-cover shadow-xl"

@@ -16,7 +16,6 @@ export const Menubar: FC = () => {
 
   useEffect(() => {
     const resizeHandler = () => {
-      // Set window width/height to state
       if (window) {
         const d = Math.round(
           Math.max(window.innerWidth, window.innerHeight) / 10
@@ -32,7 +31,7 @@ export const Menubar: FC = () => {
   return (
     <>
       <motion.nav
-        className="fixed bottom-10 z-10 flex h-16 items-center justify-between gap-10 rounded-2xl border border-black/10 bg-nav/20 px-10 pb-1 shadow-2xl backdrop-blur-sm backdrop-brightness-100"
+        className="fixed bottom-8 z-10 flex h-16 items-center justify-between gap-10 rounded-2xl border border-black/10 bg-nav/20 px-10 pb-1 shadow-2xl backdrop-blur-sm backdrop-brightness-100"
         initial={{ y: "150%" }}
         animate={{ y: 0 }}
         exit={{ y: "150%" }}
