@@ -3,10 +3,10 @@ import { type NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <Layout bg="bg-primary-project-bg">
+    <Layout bg="bg-projects-bg">
       <section
         id="hsunhsun"
-        className="relative flex h-screen flex-col items-center space-y-16 bg-primary-project-bg pt-40"
+        className="bg-primary-project-bg relative flex h-screen flex-col items-center space-y-16 pt-40"
       >
         <Image
           className="h-32 w-32 rounded-full object-cover shadow-xl"
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
           alt="Only who is smart can see it"
           draggable={false}
         />
-        <div className="font-jetbrains-mono text-2xl font-bold text-primary-text"></div>
+        <div className="text-primary-text font-jetbrains-mono text-2xl font-bold"></div>
       </section>
     </Layout>
   );
