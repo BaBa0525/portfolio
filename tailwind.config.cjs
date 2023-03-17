@@ -11,6 +11,7 @@ const config = {
           "hero-bg": "var(--home-primary)",
           "vscode-bg": "var(--vscode-primary)",
           "project-bg": "var(--project-primary)",
+          "skills-bg": "var(--skills-primary)",
           text: "#323232",
         },
         vscode: {
@@ -19,6 +20,9 @@ const config = {
           operator: "#56b6c2",
           string: "#98c379",
           editor: "#1e293c",
+        },
+        skills: {
+          "tailwind-icon": "#06b6d4",
         },
         nav: "#f6f6f6",
       },
