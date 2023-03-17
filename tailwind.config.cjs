@@ -7,14 +7,12 @@ const config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          "hero-bg": "var(--home-primary)",
-          "vscode-bg": "var(--vscode-primary)",
-          "project-bg": "var(--project-primary)",
-          "skills-bg": "var(--skills-primary)",
+        hero: {
+          bg: "var(--home-bg)",
           text: "#323232",
         },
         vscode: {
+          bg: "var(--vscode-bg)",
           element: "#e3c07b",
           attr: "#d19a66",
           operator: "#56b6c2",
@@ -22,9 +20,13 @@ const config = {
           editor: "#1e293c",
         },
         skills: {
+          bg: "var(--skills-bg)",
           "tailwind-icon": "#06b6d4",
           "react-icon": "#087ea4",
           title: "#a2b865",
+        },
+        projects: {
+          bg: "var(--projects-bg)",
         },
         nav: "#f6f6f6",
       },

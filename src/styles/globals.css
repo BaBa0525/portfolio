@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --home-primary: #f7f0e0;
-  --vscode-primary: #ddd8bb;
-  --project-primary: #d0b3c5;
-  --skills-primary: #eef2e3;
+  --home-bg: #f7f0e0;
+  --vscode-bg: #ddd8bb;
+  --projects-bg: #fcdfd9;
+  --skills-bg: #eef2e3;
 }
 /* red: d8909c */

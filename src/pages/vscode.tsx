@@ -4,7 +4,7 @@ import { type NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <Layout bg="bg-primary-vscode-bg">
+    <Layout bg="bg-vscode-bg">
       <section id="vscode" className="h-full w-full">
         <div className="mt-16 flex h-full w-full flex-col items-center">
           <div className="flex h-8 w-5/6 max-w-screen-md flex-row items-center rounded-t-lg border-b border-slate-500/30 bg-vscode-editor">

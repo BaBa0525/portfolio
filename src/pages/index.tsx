@@ -6,7 +6,7 @@ import heroPic from "/public/images/hero.jpg";
 
 const Home: NextPage = () => {
   return (
-    <Layout bg="bg-primary-hero-bg">
+    <Layout bg="bg-hero-bg">
       <section
         id="hero"
         className="relative flex flex-col items-center space-y-16 pt-40"
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           alt="Only who is smart can see it"
           draggable={false}
         />
-        <div className="font-jetbrains-mono text-2xl font-bold text-primary-text">
+        <div className="text-primary-text font-jetbrains-mono text-2xl font-bold">
           <Greeting />
         </div>
       </section>

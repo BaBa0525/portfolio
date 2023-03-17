@@ -4,11 +4,7 @@ import Head from "next/head";
 import { type FC, type PropsWithChildren } from "react";
 
 type LayoutProps = {
-  bg:
-    | "bg-primary-hero-bg"
-    | "bg-primary-vscode-bg"
-    | "bg-primary-project-bg"
-    | "bg-primary-skills-bg";
+  bg: "bg-hero-bg" | "bg-vscode-bg" | "bg-projects-bg" | "bg-skills-bg";
 };
 
 export const Layout: FC<PropsWithChildren<LayoutProps>> = ({

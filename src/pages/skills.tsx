@@ -6,7 +6,7 @@ import { type NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <Layout bg="bg-primary-skills-bg">
+    <Layout bg="bg-skills-bg">
       <section
         id="skills"
         className="relative flex flex-col items-center space-y-16 pt-16"
