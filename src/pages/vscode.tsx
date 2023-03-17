@@ -27,8 +27,8 @@ const Home: NextPage = () => {
                     user experiences
                   </Tag>
                 </Tag>
-                <Tag name="Like" props={{}}>
-                  <Tag name="Learning" props={{}}>
+                <Tag name="LikeTo" props={{}}>
+                  <Tag name="Learn" props={{}}>
                     Cheng-Hsun likes to embrace new things and skills
                   </Tag>
                   <Tag name="Exercise" props={{}}>
