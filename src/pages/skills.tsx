@@ -11,8 +11,8 @@ const Home: NextPage = () => {
         id="skills"
         className="relative flex flex-col items-center space-y-16 pt-16"
       >
-        <h1 className="text-2xl tracking-[20px]">SKILLS</h1>
-        <div className="flex flex-col justify-center">
+        <h1 className="text-2xl tracking-[20px] text-skills-title">SKILLS</h1>
+        <div className="flex flex-col justify-center gap-2">
           <Language />
           <Web />
           <Others />

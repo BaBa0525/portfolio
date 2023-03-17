@@ -24,6 +24,7 @@ const config = {
         skills: {
           "tailwind-icon": "#06b6d4",
           "react-icon": "#087ea4",
+          title: "#a2b865",
         },
         nav: "#f6f6f6",
       },
