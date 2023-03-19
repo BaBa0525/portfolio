@@ -1,4 +1,4 @@
-import { Greeting } from "@/components/Greeting";
+import { Greeting } from "@/components/hero/Greeting";
 import { Layout } from "@/layouts/Layout";
 import { type NextPage } from "next";
 import Image from "next/image";
