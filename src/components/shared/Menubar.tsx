@@ -50,7 +50,7 @@ export const Menubar: FC = () => {
       </motion.nav>
 
       <motion.div
-        className="absolute bottom-0 translate-y-1/2 rounded-full transition-colors duration-1000"
+        className="absolute bottom-0 z-10 translate-y-1/2 rounded-full transition-colors duration-1000"
         style={{ background: color, height: diameter, width: diameter }}
         animate={{ visibility: "hidden" }}
         exit={{
