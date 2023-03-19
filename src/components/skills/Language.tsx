@@ -1,6 +1,6 @@
 import { CppIcon } from "../icons/lang/CppIcon";
 import { PythonIcon } from "../icons/lang/PythonIcon";
-import { TsIcon } from "../icons/lang/TsIcon";
+import { TSIcon } from "../icons/lang/TSIcon";
 import { SkillsLayout } from "./SkillsLayout";
 
 export const Language = () => {
@@ -8,7 +8,7 @@ export const Language = () => {
     <SkillsLayout title="Language">
       <CppIcon className="h-10 w-auto" />
       <PythonIcon className="h-10 w-auto" />
-      <TsIcon className="h-10 w-10" />
+      <TSIcon className="h-10 w-10" />
     </SkillsLayout>
   );
 };
