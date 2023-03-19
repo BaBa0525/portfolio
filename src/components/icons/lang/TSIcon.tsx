@@ -1,7 +1,7 @@
 import { type FC } from "react";
 import { type IconProps } from "../types/IconProps";
 
-export const TsIcon: FC<IconProps> = ({ className }) => {
+export const TSIcon: FC<IconProps> = ({ className }) => {
   return (
     <svg
       fill="none"
