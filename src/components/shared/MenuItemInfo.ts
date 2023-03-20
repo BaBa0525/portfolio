@@ -1,3 +1,4 @@
+import mailPic from "/public/images/mail.png";
 import homePic from "/public/images/navbar/home.png";
 import lightBulbPic from "/public/images/navbar/light-bulb.png";
 import projectPic from "/public/images/navbar/projects.png";
@@ -27,5 +28,11 @@ export const MenuItemInfo = [
     alt: "projects",
     href: "/projects",
     color: "var(--projects-bg)",
+  },
+  {
+    src: mailPic,
+    alt: "projects",
+    href: "/contact",
+    color: "var(--contact-bg)",
   },
 ];
