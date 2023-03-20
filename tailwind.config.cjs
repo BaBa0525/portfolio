@@ -28,6 +28,9 @@ const config = {
         projects: {
           bg: "var(--projects-bg)",
         },
+        contact: {
+          bg: "var(--contact-bg)",
+        },
         nav: "#f6f6f6",
       },
       fontFamily: {
