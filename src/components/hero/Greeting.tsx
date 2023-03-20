@@ -10,7 +10,7 @@ export const Greeting: FC = () => {
           .start()
           .pauseFor(2000)
           .deleteAll()
-          .typeString("Or you can call me Hsunhsun :D")
+          .typeString("Or just call me Hsunhsun :D")
           .pauseFor(2000)
           .deleteAll();
       }}
