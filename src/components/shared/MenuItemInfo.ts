@@ -13,9 +13,9 @@ export const MenuItemInfo = [
   },
   {
     src: vscodePic,
-    alt: "vscode",
-    href: "/vscode",
-    color: "var(--vscode-bg)",
+    alt: "about",
+    href: "/about",
+    color: "var(--about-bg)",
   },
   {
     src: lightBulbPic,

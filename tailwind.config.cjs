@@ -12,8 +12,8 @@ const config = {
           text: "#323232",
           linkedin: "#0c66c2",
         },
-        vscode: {
-          bg: "var(--vscode-bg)",
+        about: {
+          bg: "var(--about-bg)",
           element: "#e3c07b",
           attr: "#d19a66",
           operator: "#56b6c2",

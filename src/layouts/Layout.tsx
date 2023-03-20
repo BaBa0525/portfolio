@@ -6,7 +6,7 @@ import { type FC, type PropsWithChildren } from "react";
 type LayoutProps = {
   bg:
     | "bg-home-bg"
-    | "bg-vscode-bg"
+    | "bg-about-bg"
     | "bg-projects-bg"
     | "bg-skills-bg"
     | "bg-contact-bg";

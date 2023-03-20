@@ -10,20 +10,20 @@ export const Tag: FC<TagProps> = ({ name, props, children }) => {
     <>
       <p>
         <span>{"<"}</span>
-        <span className="text-vscode-element">{`${name}`}</span>
+        <span className="text-about-element">{`${name}`}</span>
 
         <span>
           {Object.entries(props).map(([propName, value]) => (
             <>
-              <span className="text-vscode-attr">{` ${propName}`}</span>
-              <span className="text-vscode-operator">=</span>
+              <span className="text-about-attr">{` ${propName}`}</span>
+              <span className="text-about-operator">=</span>
               {typeof value === "string" ? (
-                <span className="text-vscode-string">{`"${value}"`}</span>
+                <span className="text-about-string">{`"${value}"`}</span>
               ) : (
                 <>
-                  <span className="text-vscode-operator">{"{"}</span>
-                  <span className="text-vscode-attr">{`${value}`}</span>
-                  <span className="text-vscode-operator">{"}"}</span>
+                  <span className="text-about-operator">{"{"}</span>
+                  <span className="text-about-attr">{`${value}`}</span>
+                  <span className="text-about-operator">{"}"}</span>
                 </>
               )}
             </>
