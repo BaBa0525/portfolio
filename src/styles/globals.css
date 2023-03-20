@@ -11,3 +11,62 @@
 }
 /* red: d8909c */
 /* yolk: ffba08 */
+
+.notes {
+  background-image: -webkit-linear-gradient(
+      to left,
+      var(--home-bg) 10px,
+      transparent 10px
+    ),
+    -webkit-linear-gradient(to right, var(--home-bg) 10px, transparent 10px),
+    -webkit-linear-gradient(var(--home-bg) 30px, #ccc 30px, #ccc 31px, var(
+            --home-bg
+          )
+          31px);
+  background-image: -moz-linear-gradient(
+      to left,
+      var(--home-bg) 10px,
+      transparent 10px
+    ),
+    -moz-linear-gradient(to right, var(--home-bg) 10px, transparent 10px),
+    -moz-linear-gradient(var(--home-bg) 30px, #ccc 30px, #ccc 31px, var(
+            --home-bg
+          )
+          31px);
+  background-image: -ms-linear-gradient(
+      to left,
+      var(--home-bg) 10px,
+      transparent 10px
+    ),
+    -ms-linear-gradient(to right, var(--home-bg) 10px, transparent 10px),
+    -ms-linear-gradient(var(--home-bg) 30px, #ccc 30px, #ccc 31px, var(
+            --home-bg
+          )
+          31px);
+  background-image: -o-linear-gradient(
+      to left,
+      var(--home-bg) 10px,
+      transparent 10px
+    ),
+    -o-linear-gradient(to right, var(--home-bg) 10px, transparent 10px),
+    -o-linear-gradient(var(--home-bg) 30px, #ccc 30px, #ccc 31px, var(--home-bg)
+          31px);
+  background-image: linear-gradient(
+      to left,
+      var(--home-bg) 10px,
+      transparent 10px
+    ),
+    linear-gradient(to right, var(--home-bg) 10px, transparent 10px),
+    linear-gradient(
+      var(--home-bg) 30px,
+      #ccc 30px,
+      #ccc 31px,
+      var(--home-bg) 31px
+    );
+  background-size: 100% 100%, 100% 100%, 100% 31px;
+  line-height: 31px;
+}
+
+.notes:focus {
+  outline: none;
+}
