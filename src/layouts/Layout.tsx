@@ -5,7 +5,7 @@ import { type FC, type PropsWithChildren } from "react";
 
 type LayoutProps = {
   bg:
-    | "bg-hero-bg"
+    | "bg-home-bg"
     | "bg-vscode-bg"
     | "bg-projects-bg"
     | "bg-skills-bg"

@@ -7,9 +7,10 @@ const config = {
   theme: {
     extend: {
       colors: {
-        hero: {
+        home: {
           bg: "var(--home-bg)",
           text: "#323232",
+          linkedin: "#0c66c2",
         },
         vscode: {
           bg: "var(--vscode-bg)",
