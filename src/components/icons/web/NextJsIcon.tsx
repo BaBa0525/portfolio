@@ -33,8 +33,8 @@ export const NextJsIcon: FC<IconProps> = ({ className }) => {
           id="paint0_radial_1766_6745"
           r="1"
         >
-          <stop stop-color="white"></stop>
-          <stop offset="1" stop-color="white"></stop>
+          <stop stopColor="white"></stop>
+          <stop offset="1" stopColor="white"></stop>
         </radialGradient>
         <linearGradient
           gradientUnits="userSpaceOnUse"
@@ -44,8 +44,8 @@ export const NextJsIcon: FC<IconProps> = ({ className }) => {
           y1="0"
           y2="32.5"
         >
-          <stop stop-color="white"></stop>
-          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+          <stop stopColor="white"></stop>
+          <stop offset="1" stopColor="white" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           gradientUnits="userSpaceOnUse"
@@ -55,8 +55,8 @@ export const NextJsIcon: FC<IconProps> = ({ className }) => {
           y1="51.7778"
           y2="71.3333"
         >
-          <stop stop-color="white"></stop>
-          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+          <stop stopColor="white"></stop>
+          <stop offset="1" stopColor="white" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           gradientUnits="userSpaceOnUse"
@@ -66,8 +66,8 @@ export const NextJsIcon: FC<IconProps> = ({ className }) => {
           y1="24"
           y2="47.5001"
         >
-          <stop stop-color="white"></stop>
-          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+          <stop stopColor="white"></stop>
+          <stop offset="1" stopColor="white" stopOpacity="0"></stop>
         </linearGradient>
       </defs>
     </svg>
