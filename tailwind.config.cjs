@@ -14,11 +14,13 @@ const config = {
         },
         about: {
           bg: "var(--about-bg)",
-          element: "#e3c07b",
-          attr: "#d19a66",
-          operator: "#56b6c2",
-          string: "#98c379",
-          editor: "#1e293c",
+          domain: "#99a1b3",
+          slug: "#5e697e",
+          navi: "#99a1b3",
+          web: {
+            bg: "#fef2ec",
+            text: "#3a1503",
+          },
         },
         skills: {
           bg: "var(--skills-bg)",
