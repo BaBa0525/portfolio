@@ -17,7 +17,7 @@ const About: NextPage = () => {
               </div>
             </div>
             {/* content */}
-            <div className="flex h-full items-center rounded-2xl bg-about-web-bg">
+            <div className="flex h-full rounded-2xl bg-about-web-bg">
               <div className="mt-12 overflow-scroll py-4 px-6 font-enaf text-about-web-text">
                 <h2 className="my-3 text-3xl md:text-4xl">Who am I</h2>
                 <p className="text-lg md:text-2xl">
