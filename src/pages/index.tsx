@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           <Link href="https://github.com/BaBa0525">
             <BsGithub className="h-8 w-8" />
           </Link>
-          <Link href="">
+          <Link href="https://www.linkedin.com/in/hsunhsun/">
             <BsLinkedin className="h-8 w-8 text-home-linkedin" />
           </Link>
         </div>
