@@ -39,6 +39,11 @@ const config = {
           "var(--font-jetbrains-mono)",
           ...defaultTheme.fontFamily.mono,
         ],
+        caveat: ["var(--font-caveat)", ...defaultTheme.fontFamily.sans],
+        enaf: [
+          "var(--font-edu-nsw-act-foundation)",
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
     },
   },
