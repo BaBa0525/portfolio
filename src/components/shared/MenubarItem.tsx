@@ -46,6 +46,7 @@ export const MenubarItem: FC<MenubarItemProps> = ({
             src={src}
             alt={alt}
             draggable={false}
+            placeholder="blur"
           />
         </Link>
       </motion.button>

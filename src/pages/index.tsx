@@ -20,6 +20,7 @@ const Home: NextPage = () => {
               src={homePic}
               alt="Only who is smart can see it"
               draggable={false}
+              placeholder="blur"
             />
           </div>
           <div className="text-primary-text text-center font-jetbrains-mono text-xl font-bold lg:text-2xl">

@@ -89,6 +89,7 @@ export const Carousel: FC = () => {
                 alt="web archive"
                 className="w-[90%] rounded-md"
                 draggable={false}
+                placeholder="blur"
               />
             )}
 

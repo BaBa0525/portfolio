@@ -42,6 +42,7 @@ const Contact: NextPage = () => {
             className="invisible absolute h-3/4 w-auto -translate-x-2/3 translate-y-1/3 lg:visible"
             src={paperPlanePic}
             alt=""
+            placeholder="blur"
           />
           <div className="relative z-10 flex h-full w-full max-w-xl flex-col items-center space-y-8 lg:translate-x-1/2">
             <Image
@@ -92,6 +93,7 @@ const Contact: NextPage = () => {
                   className="h-24 w-24 md:h-40 md:w-40"
                   src={approvedPic}
                   alt=""
+                  placeholder="blur"
                 />
               </button>
             </form>
