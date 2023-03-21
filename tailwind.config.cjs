@@ -33,6 +33,7 @@ const config = {
         },
         contact: {
           bg: "var(--contact-bg)",
+          title: "#355e82",
         },
         nav: "#f6f6f6",
       },
