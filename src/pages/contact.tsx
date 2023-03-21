@@ -44,7 +44,12 @@ const Contact: NextPage = () => {
             alt=""
           />
           <div className="relative z-10 flex h-full w-full max-w-xl flex-col items-center space-y-8 lg:translate-x-1/2">
-            <Image className="absolute h-full w-full" src={paperPic} alt="" />
+            <Image
+              className="absolute h-full w-full"
+              placeholder="blur"
+              src={paperPic}
+              alt=""
+            />
             <form
               className="relative z-10 flex w-5/6 flex-col items-center gap-2 rounded-md px-6 pt-8 font-caveat text-xl font-semibold"
               onSubmit={(e) => void handleSubmit(handleEmailSubmit)(e)}
