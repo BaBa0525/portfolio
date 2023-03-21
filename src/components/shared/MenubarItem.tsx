@@ -20,7 +20,7 @@ export const MenubarItem: FC<MenubarItemProps> = ({
 }) => {
   const router = useRouter();
   return (
-    <div className="relative h-10 w-10 xl:h-16 xl:w-16">
+    <div className="relative h-10 w-10 2xl:h-12 2xl:w-12">
       {router.pathname === href && (
         <motion.div
           className="absolute bottom-0 flex w-full translate-y-4 justify-center"
@@ -42,7 +42,7 @@ export const MenubarItem: FC<MenubarItemProps> = ({
       >
         <Link href={href} style={isRendering ? { pointerEvents: "none" } : {}}>
           <Image
-            className="h-full w-full select-none rounded-lg bg-white object-cover p-1 shadow-lg xl:rounded-xl"
+            className="h-full w-full select-none rounded-lg bg-white object-cover p-1 shadow-lg 2xl:rounded-xl"
             src={src}
             alt={alt}
             draggable={false}

@@ -31,7 +31,7 @@ export const Menubar: FC = () => {
   return (
     <>
       <motion.nav
-        className="fixed bottom-8 z-10 flex h-16 items-center justify-between gap-6 rounded-2xl border border-black/10 bg-nav/20 px-6 pb-1 shadow-2xl backdrop-blur-sm backdrop-brightness-100 xl:bottom-12 xl:h-24 xl:gap-9 xl:px-9"
+        className="fixed bottom-8 z-10 flex h-16 items-center justify-between gap-6 rounded-2xl border border-black/10 bg-nav/20 px-6 pb-1 shadow-2xl backdrop-blur-sm backdrop-brightness-100 2xl:bottom-10 2xl:h-20 2xl:gap-8 2xl:px-8"
         initial={{ y: "150%" }}
         animate={{ y: 0 }}
         exit={{ y: "150%" }}
