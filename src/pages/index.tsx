@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     <Layout bg="bg-home-bg">
       <section
         id="home"
-        className="relative flex flex-col items-center justify-center gap-16 pt-40"
+        className="relative flex flex-col items-center justify-center gap-16 lg:gap-20 2xl:gap-24"
       >
         <div className="space-y-16 lg:space-y-20">
           <div className="flex w-full justify-center">
@@ -23,17 +23,17 @@ const Home: NextPage = () => {
               placeholder="blur"
             />
           </div>
-          <div className="text-primary-text text-center font-jetbrains-mono text-xl font-bold lg:text-2xl">
+          <div className="text-primary-text text-center font-jetbrains-mono text-xl font-bold lg:text-2xl 2xl:text-3xl">
             <Greeting />
           </div>
         </div>
 
-        <div className="flex gap-6">
+        <div className="flex gap-6 lg:gap-10 2xl:gap-14">
           <Link href="https://github.com/BaBa0525">
-            <BsGithub className="h-8 w-8" />
+            <BsGithub className="h-8 w-8 lg:h-10 lg:w-10 2xl:h-12 2xl:w-12" />
           </Link>
           <Link href="https://www.linkedin.com/in/hsunhsun/">
-            <BsLinkedin className="h-8 w-8 text-home-linkedin" />
+            <BsLinkedin className="h-8 w-8 text-home-linkedin lg:h-10 lg:w-10 2xl:h-12 2xl:w-12" />
           </Link>
         </div>
       </section>

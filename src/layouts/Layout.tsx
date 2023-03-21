@@ -29,7 +29,7 @@ export const Layout: FC<PropsWithChildren<LayoutProps>> = ({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="flex h-full w-full flex-col items-center"
+            className="flex h-[95%] w-full flex-col items-center justify-center"
           >
             {children}
           </motion.div>
