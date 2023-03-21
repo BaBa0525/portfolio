@@ -10,13 +10,13 @@ import { SkillsLayout } from "./SkillsLayout";
 export const Web = () => {
   return (
     <SkillsLayout title="Web">
-      <ReactIcon className="h-10 w-10 fill-skills-react-icon" />
-      <NextJsIcon className="h-10 w-10" />
-      <AstroIcon className="h-10 w-10" />
-      <TailwindIcon className="h-10 w-10 fill-skills-tailwind-icon" />
-      <PrismaIcon className="h-10 w-10" />
-      <ExpressIcon className="h-10 w-10" />
-      <FastapiIcon className="h-10 w-10" />
+      <ReactIcon className="h-10 w-10 fill-skills-react-icon md:h-14 md:w-14" />
+      <NextJsIcon className="h-10 w-10 md:h-14 md:w-14" />
+      <AstroIcon className="h-10 w-10 md:h-14 md:w-14" />
+      <TailwindIcon className="h-10 w-10 fill-skills-tailwind-icon  md:h-14 md:w-14" />
+      <PrismaIcon className="h-10 w-10 md:h-14 md:w-14" />
+      <ExpressIcon className="h-10 w-10 md:h-14 md:w-14" />
+      <FastapiIcon className="h-10 w-10 md:h-14 md:w-14" />
     </SkillsLayout>
   );
 };

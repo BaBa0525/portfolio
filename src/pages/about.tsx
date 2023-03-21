@@ -17,10 +17,10 @@ const About: NextPage = () => {
               </div>
             </div>
             {/* content */}
-            <div className="flex h-full rounded-2xl bg-about-web-bg">
+            <div className="flex h-full items-center rounded-2xl bg-about-web-bg">
               <div className="mt-12 overflow-scroll py-4 px-6 font-enaf text-about-web-text">
-                <h2 className="my-3 text-3xl">Who am I</h2>
-                <p className="text-lg">
+                <h2 className="my-3 text-3xl md:text-4xl">Who am I</h2>
+                <p className="text-lg md:text-2xl">
                   Welcome to my portfolio website! I am Cheng-Hsun Wang, a
                   junior studying Computer Science at National Yang Ming Chiao
                   Tung University (NYCU). Currently, I am focusing on frontend
@@ -29,8 +29,10 @@ const About: NextPage = () => {
                   field of Human-Computer Interaction, which I find both
                   interesting and challenging.
                 </p>
-                <h2 className="mb-3 mt-5 text-3xl">My hobbies</h2>
-                <p className="text-lg">
+                <h2 className="mb-3 mt-5 text-3xl md:mb-5 md:text-4xl">
+                  My hobbies
+                </h2>
+                <p className="text-lg md:text-2xl">
                   In my free time, I enjoy playing badminton, my favorite sport,
                   to stay active. As a computer science student, I have a strong
                   passion for learning and expanding my knowledge in the field.
