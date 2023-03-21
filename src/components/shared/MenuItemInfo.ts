@@ -31,7 +31,7 @@ export const MenuItemInfo = [
   },
   {
     src: mailPic,
-    alt: "projects",
+    alt: "contact",
     href: "/contact",
     color: "var(--contact-bg)",
   },
