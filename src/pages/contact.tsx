@@ -39,7 +39,7 @@ const Contact: NextPage = () => {
 
         <Image className="absolute h-4/5 w-full" src={paperPic} alt="" />
         <form
-          className="relative z-10 flex w-5/6 flex-col items-center gap-2 rounded-md px-6 pt-8 font-jetbrains-mono"
+          className="relative z-10 flex w-5/6 flex-col items-center gap-2 rounded-md px-6 pt-8 font-caveat text-xl font-semibold"
           onSubmit={(e) => void handleSubmit(handleEmailSubmit)(e)}
         >
           <fieldset className="w-full space-y-2 px-4">
