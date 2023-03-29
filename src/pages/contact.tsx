@@ -32,24 +32,26 @@ const Contact: NextPage = () => {
     <Layout bg="bg-contact-bg">
       <section
         id="contact"
-        className="relative flex h-screen w-full flex-col items-center"
+        className="relative flex w-full flex-col items-center"
       >
         <h1 className="pt-16 text-2xl uppercase tracking-[20px] text-contact-title md:text-3xl lg:pb-10">
           Contact
         </h1>
         <div className="relative flex h-4/5 w-full justify-center">
           <Image
-            className="invisible absolute h-3/4 w-auto -translate-x-2/3 translate-y-1/3 lg:visible"
+            className="invisible absolute h-3/4 w-auto -translate-x-2/3 translate-y-1/3 select-none lg:visible"
             src={paperPlanePic}
             alt=""
             placeholder="blur"
+            draggable={false}
           />
-          <div className="relative z-10 flex h-full w-full max-w-xl flex-col items-center space-y-8 lg:translate-x-1/2">
+          <div className="relative z-10 flex h-full w-full max-w-xl flex-col items-center space-y-8 py-10 lg:translate-x-1/2">
             <Image
-              className="absolute h-full w-full"
+              className="absolute h-full w-full select-none"
               placeholder="blur"
               src={paperPic}
               alt=""
+              draggable={false}
             />
             <form
               className="relative z-10 flex w-5/6 flex-col items-center gap-2 rounded-md px-6 pt-8 font-caveat text-xl font-semibold"
@@ -90,10 +92,11 @@ const Contact: NextPage = () => {
               </fieldset>
               <button className="translate-x-20">
                 <Image
-                  className="h-24 w-24 md:h-40 md:w-40"
+                  className="h-24 w-24 select-none md:h-40 md:w-40"
                   src={approvedPic}
                   alt=""
                   placeholder="blur"
+                  draggable={false}
                 />
               </button>
             </form>

@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <Layout bg="bg-skills-bg">
       <section
         id="skills"
-        className="relative flex flex-col items-center space-y-16 pt-16"
+        className="relative flex flex-col items-center space-y-16"
       >
         <h1 className="text-2xl tracking-[20px] text-skills-title md:text-3xl">
           SKILLS

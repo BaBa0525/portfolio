@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+#__next {
+  @apply h-full;
+}
+
 :root {
   --home-bg: #f7f0e0;
   --about-bg: #fcd1c5;

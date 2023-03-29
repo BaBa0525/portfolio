@@ -8,9 +8,9 @@ const Home: NextPage = () => {
     <Layout bg="bg-projects-bg">
       <section
         id="hsunhsun"
-        className="relative flex h-screen w-full justify-center"
+        className="relative flex h-full w-full justify-center pt-12 2xl:pt-20"
       >
-        <div className="relative flex h-screen w-full max-w-2xl flex-col items-center space-y-16 pt-16 lg:pt-12">
+        <div className="relative flex h-full w-full max-w-2xl flex-col items-center space-y-16 pt-16 lg:pt-12">
           <h1 className="text-2xl uppercase tracking-[20px] text-[#817C74] md:text-3xl">
             Projects
           </h1>

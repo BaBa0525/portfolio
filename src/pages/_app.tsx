@@ -28,7 +28,7 @@ const MyApp: AppType = ({ Component, pageProps, router }) => {
   return (
     <AnimatePresence mode="wait" initial={false}>
       <main
-        className={`${JetbrainsMonoFont.variable} ${CaveatFont.variable} ${ENAFFont.variable} overflow-hidden`}
+        className={`${JetbrainsMonoFont.variable} ${CaveatFont.variable} ${ENAFFont.variable} h-full overflow-hidden`}
         key={(router as NextRouter).asPath}
       >
         <Component {...pageProps} />
