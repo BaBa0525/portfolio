@@ -29,10 +29,18 @@ const Home: NextPage = () => {
         </div>
 
         <div className="flex gap-6 lg:gap-10 2xl:gap-14">
-          <Link href="https://github.com/BaBa0525">
+          <Link
+            href="https://github.com/BaBa0525"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <BsGithub className="h-8 w-8 lg:h-10 lg:w-10 2xl:h-12 2xl:w-12" />
           </Link>
-          <Link href="https://www.linkedin.com/in/hsunhsun/">
+          <Link
+            href="https://www.linkedin.com/in/hsunhsun/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <BsLinkedin className="h-8 w-8 text-home-linkedin lg:h-10 lg:w-10 2xl:h-12 2xl:w-12" />
           </Link>
         </div>
