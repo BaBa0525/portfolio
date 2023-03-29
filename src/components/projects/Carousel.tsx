@@ -1,5 +1,5 @@
 import { AnimatePresence, motion, wrap } from "framer-motion";
-import Image from "next/image";
+import Link from "next/link";
 import { useState, type FC } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { projects } from "./projects";
@@ -47,11 +47,17 @@ export const Carousel: FC = () => {
       setPage(([p]) => [wrap(0, projects.length, p + 1), newDirection]);
   };
 
+  if (!currentProject) {
+    return <>Project Not Found</>;
+  }
+
   return (
     <>
       <button
+        aria-label="prev"
         className="absolute top-1/3 left-0 z-10 mx-4 rounded-full bg-slate-300/40 p-2 lg:-left-8"
         onClick={() => paginate("prev")}
+        title="prev"
       >
         <AiOutlineLeft className="h-6 w-6" />
       </button>
@@ -59,7 +65,7 @@ export const Carousel: FC = () => {
       <div className="relative w-full">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
-            className="absolute flex flex-col items-center gap-6"
+            className="absolute flex flex-col items-center gap-6 overflow-y-auto pb-24"
             key={page}
             custom={direction}
             variants={variants}
@@ -83,25 +89,30 @@ export const Carousel: FC = () => {
               }
             }}
           >
-            {currentProject && (
-              <Image
-                src={currentProject.image}
-                alt="web archive"
-                className="w-[90%] rounded-md"
-                draggable={false}
-                placeholder="blur"
-              />
-            )}
+            {currentProject.image}
 
             <div className="flex flex-col items-center gap-3">
-              <h2 className="text-xl md:text-2xl">{currentProject?.title}</h2>
+              <h2 className="flex items-center justify-center ">
+                <span className="text-xl md:text-2xl">
+                  {currentProject.title}
+                </span>
+                <span className="mx-2 text-xl md:text-2xl">|</span>
+                <Link
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href={currentProject.githubLink}
+                  className="h-full underline"
+                >
+                  GitHub
+                </Link>
+              </h2>
               <ul className="flex gap-2">
-                {currentProject?.skills.map((s) => (
+                {currentProject.skills.map((s) => (
                   <li key={s.key as string}>{s}</li>
                 ))}
               </ul>
               <p className="mt-2 w-[90%] md:text-lg">
-                {currentProject?.description}
+                {currentProject.description}
               </p>
             </div>
           </motion.div>
@@ -110,6 +121,8 @@ export const Carousel: FC = () => {
       <button
         className="absolute top-1/3 right-0 z-10 mx-4 rounded-full bg-slate-300/40 p-2 lg:-right-8"
         onClick={() => paginate("next")}
+        aria-label="next"
+        title="next"
       >
         <AiOutlineRight className="h-6 w-6" />
       </button>
