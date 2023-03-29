@@ -10,6 +10,7 @@ export const PythonIcon: FC<IconProps> = ({ className }) => {
       placeholder="blur"
       alt="python"
       className={className}
+      draggable={false}
     />
   );
 };
